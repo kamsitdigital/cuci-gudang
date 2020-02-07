@@ -6,7 +6,7 @@ $paginate   = !empty($_GET['page']) ? $_GET['page'] : 0;
 echo getData($paginate);
 
 function getData($paginate = 0){
-    $url    = 'http://importir.local/api/get-crowdfund-indonesia?page=' . $paginate;
+    $url    = 'https://importir.com/api/get-crowdfund-indonesia?page=' . $paginate;
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL,$url);
